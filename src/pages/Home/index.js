@@ -5,8 +5,8 @@ import React from 'react'
 const Home = () => {
   return (
         <div className='homeArea'>
-            Home
-            
+            <div className='imgArea'></div>
+       
         
         </div>
   )

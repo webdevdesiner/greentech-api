@@ -1,4 +1,83 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
 .homeArea
 {
-    background-color:##8B8B8B
+    display: flex;
+    justify-content: center;
+    background-color: rgb(228, 228, 228);
 }
+
+.home
+{
+    background-color:#8B8B8B;
+    background-image: url(./../../assets/images/4x/Ativo\ 1@4x.png);
+    background-size: 100%;
+    
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;    
+}
+
+
+
+.imgArea
+{
+    background-image: url(./../../assets/images/greentech.png);
+    width: 100%;
+    height: 50vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+   
+}
+
+.welcome
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    color: white;
+}
+
+button
+{
+    width: 200px;
+    height: 50px;
+    font-size: x-large;
+    align-items: center;
+}
+
+.botao
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.direitos
+{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+    background-color: #0c007a;
+
+    
+}
+
+
+
+
+
+

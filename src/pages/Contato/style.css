@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.HomeArea{
+   margin: 0 auto;
+   width: 65vw;
+   height: 100vh;
+   background-image: url(./../../assets/images/MicrosoftTeams-image\ \(1\).png);
+   background-size: cover;
+  
+}
+.imagem{
+    
+   width: 100%;
+   height: 30vh;
+   /* background-image: url(../../assets/images/greentech.png); */
+   
+}   
+
+img{
+   height:100% ;
+   width: 100%;
+   
+}
+.contatoArea{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.formulario{
+    height:50vh ;
+    width:40vw ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    color: white;
+    font-size: 50px;
+}
+label{
+    color: aliceblue;
+    font-size: 20px;
+}
+.form{
+    margin-bottom: 10px;
+    height: 50px;
+    width: 350px;
+    font-size: 25px;
+}
+#mensagem{
+    width: 350px;
+    height: 100px;
+}
+.blacked{
+    height: 100%;
+    width: 100%;
+    background-color: black (0,0,0,0.7);
+}

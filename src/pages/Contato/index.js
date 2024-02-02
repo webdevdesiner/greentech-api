@@ -1,5 +1,5 @@
 import './style.css';
-import {FaUser} from "react-icons/fa";
+import {FaEnvelope, FaEnvelopeOpenText, FaPencilAlt, FaUser} from "react-icons/fa";
 
 
 import React from 'react'
@@ -25,23 +25,39 @@ const Contato = () => {
 
             <label for="Nome">Nome:</label>
             <div style={{display: 'flex', alignItems: 'center'}}>
-            <div style={{position:'absolute', marginRight: '-40px'}}>
+            <div style={{position:'absolute', marginRight: '-40px', marginLeft:'10px', fontSize:'25px',color:'green'}}>
             <FaUser/>
             </div>
-            
             <input type='text' id=' nome' name='nome' className='form'></input>
-             
             </div>
             
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" className='form'></input>
+            <label for="email">Email:</label>
+            <div style={{display: 'flex', alignItems: 'center'}}>
+            <div style={{position:'absolute', marginRight: '-40px', marginLeft:'10px',fontSize:'25px',color:'green'}}>
+            <FaEnvelope/>
+            </div>
+            <input type='text' id=' email' name='email' className='form'></input>
+            </div>
 
             <label for="assunto">Assunto:</label>
-            <input type="text" id="assunto" name="assunto" className='form'></input>
+            <div style={{display: 'flex', alignItems: 'center'}}>
+            <div style={{position:'absolute', marginRight: '-40px', marginLeft:'10px',fontSize:'25px',color:'green'}}>
+            <FaPencilAlt/>
+            </div>
+            <input type='text' id=' assunto' name='assunto' className='form'></input>
+            </div>
 
             <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+            <div style={{display: 'flex', alignItems: ''}}>
+            <div style={{position:'absolute', marginRight: '-40px', marginLeft:'10px', marginTop:'10px',fontSize:'25px',color:'green'}}>
+            <FaEnvelopeOpenText/>
+            </div>
+            <textarea type='text' id='mensagem' name='mensagem' className='textoarea' placeholder='Digite sua mensagem'></textarea>
+            </div>
+
+
+
 
 
 

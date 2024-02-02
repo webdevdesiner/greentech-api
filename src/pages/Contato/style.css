@@ -64,3 +64,7 @@ label{
     width: 100%;
     background-color: black (0,0,0,0.7);
 }
+.textoarea{
+    text-align: center;
+    font-size: 23px;
+}

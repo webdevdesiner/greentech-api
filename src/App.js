@@ -2,6 +2,8 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Sobre from './pages/Sobre';
+import FaleConosco from './pages/FaleConosco';
 
 
 function App() {
@@ -20,9 +22,17 @@ function App() {
 
       </Route>
 
-    
+      <Route path='/sobre' element ={
+        <Sobre/>
+      }>
 
-     
+      </Route>
+
+      <Route path='/faleconosco' element ={
+        <FaleConosco/>
+      }>
+
+      </Route>
 
     </Routes>
 

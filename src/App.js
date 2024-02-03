@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Sobre from './pages/Sobre';
 import FaleConosco from './pages/FaleConosco';
+import Venda from './pages/Venda';
 
 
 function App() {
@@ -30,6 +31,12 @@ function App() {
 
       <Route path='/faleconosco' element ={
         <FaleConosco/>
+      }>
+
+      </Route>
+
+      <Route path='/venda' element ={
+        <Venda/>
       }>
 
       </Route>

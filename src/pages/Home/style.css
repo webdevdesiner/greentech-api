@@ -91,6 +91,11 @@ button
     justify-content: center;
     margin-top: 100px;
 }
+.botaoArea
+{
+    display: flex;
+    flex-direction: column;
+}
 
 .direitos
 {

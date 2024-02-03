@@ -6,15 +6,84 @@
     justify-content: center;
     flex-direction: column;
 }
+.faleConoscoArea
+{
+    margin-top: -70px;
+}
+.faleConoscoArea h2
+{
+    margin-bottom: 10px;
+}
 
+.text
+{
+    margin-bottom: 20px;
+}
+
+.FormularioArea
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
 
 .boxers
 {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    width: 100%;
+    justify-content: space-between;
+    font-size: x-large;
     color: white;
+    margin-bottom: 15px; 
+    width: 65%;
+     
+}
+
+.email
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-large;
+    color: white;
+    margin-bottom: 15px; 
+    width: 65%;; 
+    
+}
+
+.tel
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-large;
+    color: white;
+    margin-bottom: 15px; 
+    width: 65%;
+}
+
+.textMsg
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-large;
+    color: white;
+    margin-bottom: 15px; 
+    width: 65%;
+}
+
+.formMsg
+{
+    height: 200px;
+    width: 500px;
+}
+
+.formBox
+{
+    width: 500px;
 }
 
 

@@ -27,7 +27,7 @@ const FaleConosco = () => {
         <div className='boxers'>
         <label>Nome</label>
         <input type='text' className='formBox'></input>
-
+        </div>
         <div className='email'> 
         <label>Email</label>
         <input type='email'className='formBox'></input>
@@ -38,11 +38,12 @@ const FaleConosco = () => {
         <input type='tel'className='formBox'></input>
         </div>
 
-        <div className='textmsg'>
+        <div className='textMsg'>
         <label>Mensagem</label>
-        <input type='text'className='formmsg'></input>
+        <input type='text'className='formMsg'></input>
         </div>
-      </div>
+
+      
       </div>
     </div>
 

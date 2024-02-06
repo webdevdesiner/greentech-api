@@ -1,6 +1,7 @@
 import Footer from '../../components/Footer';
 import Nav from './../../components/Nav';
 import './style.css';
+import Menu from './../../components/Menu'
 
 
 import React from 'react'
@@ -13,6 +14,7 @@ const Login = () => {
         
         <div className='blacked'>
         <Nav/>
+        <Menu/>
           <div className='imgArea'></div>
           <div className='welcome'><h1>LOGIN</h1></div>
           <div className='loginArea'>
@@ -24,7 +26,7 @@ const Login = () => {
           </div>
           
           <div className='botao'><button><strong>ENTRAR</strong></button>  </div>
-          <div className='botao'><button><strong>CADASTRAR</strong></button>  </div>
+          <div className='botao'><button><strong>< a href='./../Cadastro'>CADASTRAR</a></strong></button>  </div>
           
         </div>
         

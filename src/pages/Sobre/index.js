@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
+import Menu from './../../components/Menu'
 import './style.css'
 
 
@@ -14,6 +15,7 @@ const Sobre = () => {
       <div className='home'>
         <div className='blacked'>
           <Nav />
+          <Menu/>
           <div className='imgArea'></div>
 
           <div className='sobreArea'>

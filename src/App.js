@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Sobre from './pages/Sobre';
 import FaleConosco from './pages/FaleConosco';
 import Venda from './pages/Venda';
+import Cadastro from './pages/Cadastro';
 
 
 function App() {
@@ -37,6 +38,12 @@ function App() {
 
       <Route path='/venda' element ={
         <Venda/>
+      }>
+
+      </Route>
+
+      <Route path='/cadastro' element ={
+        <Cadastro/>
       }>
 
       </Route>

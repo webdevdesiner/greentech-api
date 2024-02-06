@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Cadastro from './pages/Cadastro';
+import CadastroProdutos from './pages/CadastroProdutos';
 
 function App() {
   return (
     
     <Routes>
       <Route path='/' element ={
-        <Cadastro/>
+        <CadastroProdutos/>
       }>
 
       </Route>

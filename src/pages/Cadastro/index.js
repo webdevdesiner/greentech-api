@@ -15,52 +15,110 @@ const Cadastro = () => {
                     <Nav />
                     <Menu />
                     <div className='imgArea'></div>
-                    <div className='cadastroArea'>
 
-                        <form className='acessoArea'>
-                            <label for="email">Email</label>
-                            <input type='email' id='email' name='email'></input>
-                            
+                    <form className='cadastroArea'>
+                        <div className='formArea'>
+                            <div className='bloco'>
+                                <div className='linha'>
+                                    <div className='campo'>
+                                        <label>Email</label>
+                                        <input></input>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='bloco'>
+                                <div className='linha'>
+                                    <div className='campo'>
+                                        <label>Senha</label>
+                                        <input></input>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='bloco'>
+                                <div className='linha'>
+                                    <div className='campo'>
+                                        <label>Confirme sua senha</label>
+                                        <input></input>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='formArea'>
+                            <div className='bloco'>
+                                <div className='linha'>
+                                    <div className='campo'>
+                                        <label>Nome Completo</label>
+                                        <input></input>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='bloco'>
+                                <div className='linha'>
+                                    <div className='campo'>
+                                        <label>CPF</label>
+                                        <input></input>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='bloco'>
+                                <div className='linha'>
+                                    <div className='campo'>
+                                        <label>Data de nascimento</label>
+                                        <input></input>
+                                    </div>
+                                </div>
+                            </div>
 
-                            <label for="senha">Senha</label>
-                            <input type='password' id='senha' name='senha'></input>
+                        </div>
+                        <div className='formArea'>
+                            <div className='bloco'>
+                                <div className='linha'>
+                                    <div className='campo'>
+                                        <label for="genero">Gênero:</label>
+                                        <select id="genero" name="genero">
+                                            <option value="masculino">Masculino</option>
+                                            <option value="feminino">Feminino</option>
+                                            <option value="outro">Outro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='bloco'>
+                                <div className='linha'>
+                                    <div className='campo'>
+                                        <label>CPF</label>
+                                        <input></input>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='bloco'>
+                                <div className='linha'>
+                                    <div className='campo'>
+                                        <label>Data de nascimento</label>
+                                        <input></input>
+                                        <label for="telefone">Telefone:</label>
+                                        <input type="tel" id="telefone" name="telefone"></input>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='bloco'>
+                                <div className='linha'>
+                                    <div className='campo'>
+                                        <label for="endereco">Endereço:</label>
+                                        <input type="text" id="endereco" name="endereco"></input>
+                                        <label for="complemento">Complemento:</label>
+                                        <input type="text" id="complemento" name="complemento"></input>
+                                    </div>
+                                </div>
+                            </div>
 
-                           
-                            <label for="nome"> Nome Completo</label>
-                            <input type='text'></input>
 
-                            <label for="endereco">Endereço</label>
-                            <input type='endereco' id='endereco' name='endereco'></input>
-
-                            <label for="telefone">Telefone</label>
-                            <input type='telefone' id='telefone' name='telefone'></input>
-
-                        
-                        </form>
-
-                        <form className='acessoArea2'>
-                            <label for="confirmeEmail">Confirme seu email</label>
-                            <input type='email' id='confirmeEmail' name='email'></input>
-
-                           
-                            <label for="confimeSenha">confirme su Senha</label>
-                            <input type='password' id='confirmeSenha' name='confirmeSenha'></input>
-                            
-
-                            <label for="emacpfil">CPF</label>
-                            <input type='number' id='cpf' name='cpf'></input>
-
-                           
-                        </form>
+                        </div>
 
 
 
 
-
-
-
-
-                    </div>
+                    </form>
                     <Footer />
                 </div>
             </div>

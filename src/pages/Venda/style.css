@@ -30,3 +30,14 @@
     border-radius: 10px;
     margin-right: 15px;
 }
+
+.comprarArea
+{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(250, 234, 10);
+}

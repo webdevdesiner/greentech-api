@@ -2,6 +2,7 @@ import Footer from '../../components/Footer';
 import Nav from '../../components/Nav';
 import './style.css';
 import Menu from './../../components/Menu'
+import { FaShoppingCart } from 'react-icons/fa';
 
 import React from 'react'
 
@@ -48,6 +49,15 @@ const Venda = () => {
                             </div>
                         </div>
 
+                    </div>
+                    <div className='comprarArea'>
+                        <div className='preço'><h1>R$ 99,99</h1></div>
+                        <div className='botaoComprar'>
+                        <button type="button">COMPRAR </button>
+                        </div>
+                        <div className='botaoCarrinho'>
+                            <button type='button'><FaShoppingCart className='iconeMedio'/></button>
+                        </div>
                     </div>
 
 

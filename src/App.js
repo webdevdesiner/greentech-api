@@ -6,6 +6,7 @@ import Sobre from './pages/Sobre';
 import FaleConosco from './pages/FaleConosco';
 import Venda from './pages/Venda';
 import Cadastro from './pages/Cadastro';
+import Listagem from './pages/Listagem';
 
 
 function App() {
@@ -44,6 +45,12 @@ function App() {
 
       <Route path='/cadastro' element ={
         <Cadastro/>
+      }>
+
+      </Route>
+
+      <Route path='/listagem' element ={
+        <Listagem/>
       }>
 
       </Route>

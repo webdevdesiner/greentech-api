@@ -62,7 +62,7 @@ label{
 .blacked{
     height: 100%;
     width: 100%;
-    background-color: black (0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .textoarea{
     text-align: center;

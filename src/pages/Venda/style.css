@@ -96,6 +96,25 @@
     font-size: 35px;
     align-items: center;
     justify-content: center;
+   
+}
+#comprar{
+    height: 50px;
+        width: 170px;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    
+        background-color: green;
+        color: white;
+        height: 50px;
+        width: 170px;
+        font-size: 35px;
+    
+        margin-left: 250px;
+
+
 }
 
 ::placeholder{
@@ -113,8 +132,8 @@
   
     background-color: white ;
     resize: none;
-    height: 200px;
-     width: 400px;
+    height: 250px;
+     width: 510px;
      padding-top: 25px;
      font-size: 25px;
      color: black;
@@ -122,15 +141,24 @@
      border: none;
 
 }
-button{
-    background-color: green;
-    color: white;
-    height: 50px;
-    width: 170px;
-    font-size: 35px;
-    align-items: center;
-    justify-content: center;
-    margin-left: 265px;
-    margin-top: 10px;
+.preço{
+    padding-top:10px ;
+    
 }
 
+.AreaProdutos{
+    height: 20vh;
+    width: 100%;
+   
+    margin-top: 50px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+.Quadro{
+    height: 150px;
+    width: 150px;
+    background-color: brown;
+    background-image: url(../../assets/images/placamae.webp);
+    background-size: cover;
+}

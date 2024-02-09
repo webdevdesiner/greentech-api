@@ -4,6 +4,7 @@ import { FaHeart, FaPaperPlane } from "react-icons/fa"
 
 import React from 'react';
 import MinhaImagem from './../../assets/images/greentech.png'
+import Footer from "../../components/Footer";
 
 
 
@@ -17,6 +18,7 @@ const Venda = () => {
         </div>
 
         <div className="telaArea">
+          <FaHeart/>
           <div className="div1">
 
 
@@ -28,9 +30,8 @@ const Venda = () => {
             </div>
             <div className="preço">
               <label for="preco"></label>
-              <input type="number" id="preco" name="preco" min="0" step="0.01" placeholder="Preço"></input>
-
-              <button>Comprar</button>
+              <button disabled  id="preco" name="preco" rows={50} cols={50} placeholder="R$ Preço">R$ Preço</button>
+              <button id="comprar">Comprar</button>
             </div>
 
           </div>
@@ -44,18 +45,26 @@ const Venda = () => {
             </div>
                 <textarea disabled id="mensagemV" name="mensagem" rows={50} cols={50} placeholder="Tem duvidas?"></textarea>
              
-
             </div>
           </div>
 
+          <div className="AreaProdutos">
+            <div className="Quadro"></div>
+            <div className="Quadro"></div>
+            <div className="Quadro"></div>
+            <div className="Quadro"></div>
+
+          </div>
         </div>
 
         <div>
 
         </div>
 
+        <Footer/>
 
       </div>
+       
 
 
 

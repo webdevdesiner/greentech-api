@@ -1,0 +1,66 @@
+.blocoListagem
+{
+    width: 100%;
+    height: 56vh;
+    /* background-color: blue; */
+    margin-top: -140px;
+}
+
+.listagemArea
+{
+    width: 100%;
+    height: 50%;
+    /* background-color: rgb(184, 184, 184); */
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+.boxListagemDescricaoFoto
+{
+    width: 50%;
+    height: 96%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotoListagem
+{
+    background-image: url('./../../assets/images/placaMae.webp');
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    width: 96%;
+    height: 75%;    
+}
+
+.DescricaoListagem
+{
+    width: 96%;
+    height: ;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+} 
+
+.listagemComprar
+{
+    display: flex;
+    justify-content: right;
+    /* background-color: yellow; */
+    align-items: center;
+    margin-right: 10px;
+    color: green;
+    size: 
+
+}
+
+
+

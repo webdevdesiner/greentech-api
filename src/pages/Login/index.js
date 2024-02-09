@@ -25,7 +25,7 @@ const Login = () => {
             <input type='password'></input>
           </div>
           
-          <div className='botao'><button><strong>ENTRAR</strong></button>  </div>
+          <div className='botao'><button><a href='./Listagem'><strong>ENTRAR</strong></a></button>  </div>
           <div className='botao'><button><strong>< a href='./../Cadastro'>CADASTRAR</a></strong></button>  </div>
           
         </div>

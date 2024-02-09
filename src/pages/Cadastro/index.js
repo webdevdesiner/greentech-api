@@ -166,7 +166,9 @@ const Cadastro = () => {
                                 </div>
                             </div>
                         </div>
-
+                            <div className='botaoCadatsroEnviarAlinhamento'> 
+                        <div><button className='botaoCadastroEnviar'><a href='./Login'>ENVIAR</a></button></div>
+                        </div>
                     </form>
                     <Footer />
                 </div>

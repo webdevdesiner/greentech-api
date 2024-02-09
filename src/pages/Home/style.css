@@ -26,12 +26,13 @@
 
     background-image: url(./../../assets/images/4x/Ativo\ 1@4x.png);
     background-size: 100%;
-    
     background-repeat: no-repeat;
     width: 50vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    
+
 }
 
 

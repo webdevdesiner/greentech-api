@@ -13,10 +13,8 @@ const Menu = () => {
         <li><a href='./Venda'>Venda</a></li>       
         <li><a href='./Sobre'>Sobre</a></li>
         <li><a href='./FaleConosco'>Fale Conosco</a></li>
-        <li><a href=''>?</a></li>
-        <li><a href=''>?</a></li>
-        <li><a href=''>?</a></li>
-        <li><a href=''>?</a></li>
+        <li><a href='Cadprodutos'>Cadastro Produtos</a></li>
+        
         
         
       </ul>

@@ -7,17 +7,15 @@ import './style.css'
 const Cadastro = () => {
     return (
         <div className='homeArea'>
-
-
-
             <div className='home'>
                 <div className='blacked'>
                     <Nav />
                     <Menu />
                     <div className='imgArea'></div>
 
-                    <form className='cadastroArea'>
 
+
+                    <form className='cadastroArea'>
                         <h1>CADASTRO USUÁRIO</h1> <br/><br/><br/>
 
                         <div className='blocoLine'>

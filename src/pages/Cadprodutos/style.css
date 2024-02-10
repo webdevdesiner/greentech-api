@@ -1,0 +1,36 @@
+.blocoLogo
+{
+    width: 100%;
+    display: flex; 
+    flex-direction: row; 
+    color: white; 
+    margin-top: 100px;
+
+}
+
+.formCadProdutoArea
+{
+    width: 40%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: yellow;
+
+    
+}
+
+
+.imgAreaLogo
+{
+    background-image: url(./../../assets/images/1x/Ativo\ 1logo.png);
+    width: 20%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;   
+    margin-left: 10px;
+    background-color: green;
+   
+   
+}

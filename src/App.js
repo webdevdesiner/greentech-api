@@ -7,6 +7,8 @@ import FaleConosco from './pages/FaleConosco';
 import Venda from './pages/Venda';
 import Cadastro from './pages/Cadastro';
 import Listagem from './pages/Listagem';
+import Cadprodutos from './pages/Cadprodutos';
+
 
 
 function App() {
@@ -51,6 +53,12 @@ function App() {
 
       <Route path='/listagem' element ={
         <Listagem/>
+      }>
+
+      </Route>
+
+      <Route path='/cadprodutos' element ={
+        <Cadprodutos/>
       }>
 
       </Route>

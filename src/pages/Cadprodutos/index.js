@@ -13,23 +13,31 @@ const Cadprodutos = () => {
 
         <div className='home'>
           <div className='blacked'>
+
             <Nav />
             <Menu />
             <section className='blocoLogo'>
+              <h1 className='tituloProduto'>Titulo Produto h1</h1>
+            </section>
 
-              <div className='imgAreaLogo'></div>
-              <div className='formCadProdutoArea'>
-               
+            <section className='formularioProduto'>
+              <form className='forCadProdutos'>
+                <label for="nome">Nome do Produto:</label>
+                <input type="text" id="nomeProduto" name="nome" required></input>
 
-                <label>Nome do Produto</label>
-                <input type='text'></input>
-              </div>
-              <div className='forCadProdutoArea'>
-                
-            
-                <label>Foto do Produto</label>
-                <input type='file'></input>
-              </div>
+                <label for="preco">Preço:</label>
+                <input type="number" id="precoProduto" name="preco" step="0.01" required></input>
+
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidadeProduto" name="quantidade" required></input>
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricaoProduto" name="descricao" rows="20" required></textarea>
+
+                <button type="submit" className='botao'>Cadastrar</button>
+
+
+              </form>
 
             </section>
 

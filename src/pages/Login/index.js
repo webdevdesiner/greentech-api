@@ -15,7 +15,7 @@ const Login = () => {
         <div className='blacked'>
         <Nav/>
         <Menu/>
-          <div className='imgArea'></div>
+          <div className='imgArea2'></div>
           <div className='welcome'><h1>LOGIN</h1></div>
           <div className='loginArea'>
             <label>Usuário</label>

@@ -7,6 +7,7 @@ const Nav = () => {
     <div>
 
 <div className='navArea'>
+<div className='logoMenor'></div>
     <div className='pesquisa'>
       <FaSearch className='iconeMedio'/>
       <input type='text'className='cxInput'></input></div>

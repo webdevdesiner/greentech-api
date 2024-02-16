@@ -20,7 +20,7 @@ const Home = () => {
         <div className='blacked'>
         <Nav/>
         <Menu/>
-          <div className='imgArea'></div>
+          <div className='imgArea2'></div>
           {/* <div className='welcome'><h1>{titulo}</h1></div> */}
           <div className='welcome'><h1>SEJA BEM VINDO</h1></div>
           <div className='boxTexto'>

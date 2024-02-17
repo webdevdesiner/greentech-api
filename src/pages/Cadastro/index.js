@@ -21,28 +21,28 @@ const Cadastro = () => {
                         <div className='blocoLine'>
                             <div className='formArea'>
                                 <div className='bloco'>
-                                    <div className='linha'>
+                                    
                                         <div className='campo'>
                                             <label>Email</label>
                                             <input type='email'></input>
                                         </div>
-                                    </div>
+                                    
                                 </div>
                                 <div className='bloco'>
-                                    <div className='linha'>
+                                    
                                         <div className='campo'>
                                             <label>Senha</label>
                                             <input type='password'></input>
                                         </div>
-                                    </div>
+                                    
                                 </div>
                                 <div className='bloco'>
-                                    <div className='linha'>
+                                    
                                         <div className='campo'>
                                             <label>Confirme sua senha</label>
                                             <input type='password'></input>
                                         </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div className='formArea'>

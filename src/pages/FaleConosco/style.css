@@ -5,10 +5,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
 }
 .faleConoscoArea
 {
     margin-top: -70px;
+    /* background-color: yellow; */
 }
 .faleConoscoArea h2
 {

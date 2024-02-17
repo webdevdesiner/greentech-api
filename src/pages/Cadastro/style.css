@@ -36,22 +36,22 @@
 
 .bloco
 {
-   width: 100%;
+   flex: 1;
    
    /* background-color: blue; */
 }
 
 .linha
 {
-   width: 70%;
+   flex: 1;
    /* background-color: rgb(160, 23, 173); */
    padding: 6px;
 }
 
 .campo
 {
-   width: 60%;
-   /* background-color: red ; */
+   display: flex;
+   flex-direction: column;
 }
 
 .botaoCadatsroEnviarAlinhamento
@@ -61,10 +61,7 @@
    
 }
 
-.botaoCadastroEnviar
-{
-   width: 100px;
-   height: 30px;
-   font-size: medium;
-   align-items: center;  
+
+.campo input {
+   width: 90%;
 }

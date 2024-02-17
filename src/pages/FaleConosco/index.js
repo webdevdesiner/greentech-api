@@ -24,7 +24,7 @@ const FaleConosco = () => {
       <h3> Preenha os dados abaixo e clique em enviar</h3>
       </div>  
 
-      <div className='FormularioArea'>
+      <form className='FormularioArea'>
 
         <div className='boxers'>
         <label>Nome</label>
@@ -44,9 +44,9 @@ const FaleConosco = () => {
         <label>Mensagem</label>
         <input type='text'className='formMsg'></input>
         </div>
-
+        <button>ENVIAR</button>
       
-      </div>
+      </form>
     </div>
 
 

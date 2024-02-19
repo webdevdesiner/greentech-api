@@ -5,36 +5,38 @@ import React from 'react'
 
 const Cadastro = () => {
   return (
-    <body className='HomeArea'>
+    <body className='cuerpo' >
+      <div className='HomeArea'>
 
-      <div className='Blacked'>
+        <div className='Blacked'>
 
-        <div id="cadastroForm">
-          <form id="formulario">
+          <div id="cadastroForm">
+            <form id="formulario">
 
-              <label for="nome">Nome:</label>
-              <input type='text' id='CadstroArea'></input>
-          
-              <label for="email">Email:</label>
-              <input type="email" id="email" required></input>
+              <label className='shell' for="nome">Nome:</label>
+              <input className='ipiranga' type='text' id='CadstroArea'></input>
 
-              <label for="confirmarEmail">Confirmar Email:</label>
-              <input type="email" id="confirmarEmail" required></input>
-          
-              <label for="senha">Senha:</label>
-              <input type="password" id="senha" required></input>
+              <label className='shell' for="email">Email:</label>
+              <input className='ipiranga' type="email" id="email" required></input>
 
-              <label for="confirmarSenha">Confirmar Senha:</label>
-              <input type="password" id="confirmarSenha" required></input>
-          
-              <label for="telefone">Telefone:</label>
-              <input type='tel' id='telefone'></input>
+              <label className='shell' for="confirmarEmail">Confirmar Email:</label>
+              <input className='ipiranga' type="email" id="confirmarEmail" required></input>
 
-              <label for="cep">CEP:</label>
-              <input type='password' id='cep'></input>
-        
-            <button type="button" onclick="cadastrar()">Cadastrar</button>
-          </form>
+              <label className='shell' for="senha">Senha:</label>
+              <input className='ipiranga' type="password" id="senha" required></input>
+
+              <label className='shell' for="confirmarSenha">Confirmar Senha:</label>
+              <input className='ipiranga' type="password" id="confirmarSenha" required></input>
+
+              <label className='shell' for="telefone">Telefone:</label>
+              <input className='ipiranga' type='tel' id='telefone'></input>
+
+              <label className='shell' for="cep">CEP:</label>
+              <input className='ipiranga' type='password' id='cep'></input>
+
+              <button className='boton' type="button" onclick="cadastrar()">Cadastrar</button>
+            </form>
+          </div>
         </div>
       </div>
     </body>

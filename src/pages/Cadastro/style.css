@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
+.cuerpo {
     font-family: Arial, sans-serif;
     height: 900px;
     display: flex;
@@ -30,16 +30,13 @@ body {
     justify-content: center;
 }
 
-h2 {
-    color: #333;
-}
 
-label {
+.shell {
     display: block;
     margin-top: 10px;
 }
 
-input {
+.ipiranga {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
@@ -48,7 +45,7 @@ input {
     display: flex;
 }
 
-button {
+.boton {
     background-color: #4caf50;
     color: #fff;
     padding: 10px;

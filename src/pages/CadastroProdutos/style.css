@@ -4,37 +4,38 @@
     box-sizing: border-box;
 }
 
-body {
+.corpo {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     
+    
 }
 
 
-form {
+.forma {
     background-color: lightgray;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
+.red {
     display: block;
     margin-bottom: 7px;
 }
 
-input,
-select {
+.pagodinho,
+.seleto {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
     box-sizing: border-box;
 }
 
-button {
+.botao {
     background-color: #4caf50;
     color: #fff;
     padding: 10px 15px;
@@ -47,6 +48,10 @@ button:hover {
     background-color: #45a049;
 }
 
+#descricao{
+    resize: none;
+}
+
 .Foto{
     height: 80px;
 }
@@ -56,7 +61,7 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 65vw;
+    width: 70vw;
     height: 100vh;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.7);
@@ -64,16 +69,6 @@ button:hover {
 
 }
 
-.Tela{
-    background-image: url(../../assets/images/Tela.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 35vh;
-    margin: 0 auto;
-    
-}
 
 .Blacked{
     height: 100%;

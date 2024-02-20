@@ -33,7 +33,24 @@
     background-image: url(../../assets/images/girar-tela-windows.jpg);
     background-size: cover;
     background-position: center;
+    
 }
+#coracao{
+    margin-left: 550px;
+    padding-top: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    
+    
+}
+#coracao:hover {
+    /* filter: invert(100%); Inverte a cor do ícone */
+    color: red;
+
+
+}
+
+
 .for{
     font-size: 30px;
     margin-bottom: 10px;

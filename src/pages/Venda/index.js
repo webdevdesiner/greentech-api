@@ -1,5 +1,5 @@
 import "./style.css";
-import { FaHeart, FaPaperPlane } from "react-icons/fa"
+import { FaHeart, FaRegHeart } from "react-icons/fa"
 
 
 import React from 'react';
@@ -18,14 +18,18 @@ const Venda = () => {
         </div>
 
         <div className="telaArea">
-          <FaHeart/>
           <div className="div1">
+          
 
 
             <label for='nome'></label>
             <input disabled type="text" id="titulo" name="titulo" className="for" placeholder="Tela de Computador"></input>
 
             <div className="Titulotela">
+              <div id="coracao">
+              <FaRegHeart/>
+
+              </div>
 
             </div>
             <div className="preço">

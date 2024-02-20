@@ -20,6 +20,8 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -30px;
+    
 }
 
 .red {
@@ -56,7 +58,7 @@ button:hover {
     height: 80px;
 }
 
-.HomeArea{
+.HomemArea{
     background-image: url(../../assets/images/facil.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,10 +72,9 @@ button:hover {
 }
 
 
-.Blacked{
+.Blackedo{
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;

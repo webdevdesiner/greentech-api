@@ -6,10 +6,9 @@ import React from 'react'
 const CadastroProdutos = () => {
     return (
         <body className='corpo' >
-            <div className='HomeArea'>
-            <div className='Tela'></div>
+            <div className='HomemArea'>
 
-            <div className='Blacked'>
+            <div className='Blackedo'>
 
                 <form className='forma'>
 

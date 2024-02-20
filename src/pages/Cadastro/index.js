@@ -1,3 +1,4 @@
+import Footer from '../../components/Footer'
 import './style.css'
 
 
@@ -6,9 +7,9 @@ import React from 'react'
 const Cadastro = () => {
   return (
     <body className='cuerpo' >
-      <div className='HomeArea'>
+      <div className='HomemAre'>
 
-        <div className='Blacked'>
+        <div className='Blacke'>
 
           <div id="cadastroForm">
             <form id="formulario">
@@ -38,6 +39,7 @@ const Cadastro = () => {
             </form>
           </div>
         </div>
+        <Footer/>
       </div>
     </body>
   )

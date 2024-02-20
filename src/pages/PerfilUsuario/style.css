@@ -151,3 +151,16 @@ input {
     font-size: 100px;
     margin-top: -60px;
 }
+
+.HomemAr{
+    background-image: url(../../assets/images/facil.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 70vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    flex-direction: column;
+
+}

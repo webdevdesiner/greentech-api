@@ -68,7 +68,7 @@ button:hover {
     margin-top: 5px;
 }
 
-.Blacked{
+.Blacke{
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -78,7 +78,7 @@ button:hover {
 
 }
 
-.HomeArea{
+.HomemAre{
     background-image: url(../../assets/images/facil.png );
     background-repeat: no-repeat;
     background-size: cover;

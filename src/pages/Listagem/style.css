@@ -31,7 +31,7 @@
 
 .fotoListagem
 {
-    background-image: url('./../../assets/images/placaMae.webp');
+    background-image: url('./../../assets/images/placamae.webp');
     background-position: center;
     background-size: 60%;
     background-repeat: no-repeat;
@@ -42,7 +42,7 @@
 .DescricaoListagem
 {
     width: 96%;
-    height: ;
+    height: 100%;
     background-color: rgb(255, 255, 255);
     margin: 5px;
     font-size: small;
@@ -58,7 +58,6 @@
     align-items: center;
     margin-right: 10px;
     color: green;
-    size: 
 
 }
 

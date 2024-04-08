@@ -9,8 +9,7 @@ const Footer = () => {
         <FaEnvelope/>
         <FaInstagram/>
         <FaFacebook/>
-    </div>
-  )
+  </div>)
 }
 
 export default Footer

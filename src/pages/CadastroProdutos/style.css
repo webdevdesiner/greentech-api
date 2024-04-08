@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.corpo {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+.forma {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -30px;
+    
+}
+
+.red {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.pagodinho,
+.seleto {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.botao {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#descricao{
+    resize: none;
+}
+
+.Foto{
+    height: 80px;
+}
+
+.HomemArea{
+    background-image: url(../../assets/images/facil.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 70vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    flex-direction: column;
+
+}
+
+
+.Blackedo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#picture__input {
+    display: none;
+  }
+  
+  .picture {
+    width: 400px;
+    aspect-ratio: 16/9;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    border: 2px dashed currentcolor;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    outline: none;
+    overflow: hidden;   
+  }
+  
+  .picture:hover {
+    color: #777;
+    background: #ccc;
+  }
+  
+  .picture:active {
+    border-color: turquoise;
+    color: turquoise;
+    background: #eee;
+  }
+  
+  .picture:focus {
+    color: #777;
+    background: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .picture__img {
+    max-width: 100%;
+  }

@@ -8,15 +8,17 @@ import Venda from './pages/Venda';
 import Cadastro from './pages/Cadastro';
 import Listagem from './pages/Listagem';
 import Cadprodutos from './pages/Cadprodutos';
-
-
+import CadastroProdutos from './pages/CadastroProdutos';
+import PerfilUsuario from './pages/PerfilUsuario';
+import Cadastro from './pages/Cadastro';
+import Chat from './pages/Chat'
 
 function App() {
   return (
     
     <Routes>
-      <Route path='/' element ={
-        <Home/>
+      <Route path='cadprod' element ={
+        <CadastroProdutos/>
       }>
 
       </Route>
@@ -63,7 +65,19 @@ function App() {
 
       </Route>
 
+      <Route path='perfusu' element ={
+        <PerfilUsuario/>
+      }></Route>
+
+<Route path='cad' element ={
+        <Cadastro/>
+      }></Route>
+
+<Route path='chat' element ={
+        <Chat/>
+      }></Route>
     </Routes>
+    
 
   );
 }

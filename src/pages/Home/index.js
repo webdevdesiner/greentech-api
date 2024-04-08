@@ -29,10 +29,7 @@ const Home = () => {
           <div className='botao'><button><strong><a href='./Listagem'>VISITANTE</a></strong></button>  </div>
           </div>
           </div>
-          
-
-          
-
+     
         </div>
            <Footer />
       </div>

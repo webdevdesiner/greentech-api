@@ -1,5 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import CadastroProdutos from './pages/CadastroProdutos';
+import PerfilUsuario from './pages/PerfilUsuario';
+import Cadastro from './pages/Cadastro';
+import Chat from './pages/Chat'
+import MeusAnuncios from './pages/MeusAnuncios';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Sobre from './pages/Sobre';
@@ -16,7 +21,22 @@ function App() {
     
     <Routes>
       <Route path='/' element ={
-        <Home/>
+          <Home/>
+        }>
+      </Route>
+      <Route path='/Contato' element ={
+          <Contato/>
+        }>
+      </Route>
+      <Route path='/Venda' element ={
+          <Venda/>
+        }>
+      </Route>
+      <Route path='/MeusAnuncios' element ={
+          <MeusAnuncios/>
+        }></Route>
+      <Route path='cadprod' element ={
+        <CadastroProdutos/>
       }>
 
       </Route>
@@ -64,6 +84,7 @@ function App() {
       </Route>
 
     </Routes>
+    
 
   );
 }

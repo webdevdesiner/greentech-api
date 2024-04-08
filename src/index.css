@@ -4,3 +4,21 @@
   padding: 0;
   margin: 0;
 }
+
+.iconePequeno {
+  font-size: 1em;
+}
+
+.iconeMedio2
+{
+  font-size: 1.5em;
+}
+
+.iconeMedio {
+  font-size: 2em;
+}
+
+.iconeGrande {
+  font-size: 3em;
+}
+

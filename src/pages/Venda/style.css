@@ -1,181 +1,45 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.HomeArea{
-   margin: 0 auto;
-   width: 55vw;
-   height: 100vh;
-   background-image: url(../../assets/images/MicrosoftTeams-image\ \(1\).png);
-   background-size: cover;
-   
-   
-}
-.blacked{
-    height: 100%;
+.vendaArea {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-
-}
-.imagem{
-   width: 100%;
-   height: 27vh; 
-   padding-top: 40px;   
-}
-.telaArea{
     height: 40vh;
-    width: 100%;
+    margin-top: -80px;
     display: flex;
-}
-.Titulotela{
-    height: 28vh;
-    background-image: url(../../assets/images/girar-tela-windows.jpg);
-    background-size: cover;
-    background-position: center;
-    
-}
-#coracao{
-    margin-left: 550px;
-    padding-top: 15px;
-    font-size: 30px;
-    cursor: pointer;
-    
-    
-}
-#coracao:hover {
-    /* filter: invert(100%); Inverte a cor do ícone */
-    color: red;
-
-
-}
-
-
-.for{
-    font-size: 30px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.div1{
-    flex: 1;
-    height: 40vh;
-
-}
-.div2{
-    flex: 1;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    
-}
-.Teminteresse{
-   width: 280px;
-   height: 60px;
-   border: 2px solid rgb(11, 11, 238);
-   background-color: green;
-   margin-left: 30px;
-   
-}
-
-.botaoTeminteresse{
- font-size: 30px;  
-   
-}
-.icon{
-    height: 21px;
-    width: 30px;
-}
-.Enviar{
-    width: 200px;
-    height: 60px;
-    border: 2px solid rgb(11, 11, 238);
-    background-color: green;
-    margin-left: 25px;
-   
-   
-    
-}
-.botaoh1{
-    font-size: 40px;
-    margin-left: 5px;
-    
-    
-}
-#preco{
-    background-color: green;
-    color: white;
-    height: 50px;
-    width: 170px;
-    font-size: 35px;
-    align-items: center;
-    justify-content: center;
-   
-}
-#comprar{
-    height: 50px;
-        width: 170px;
-        font-size: 30px;
-        align-items: center;
-        justify-content: center;
-        margin-top: 20px;
-    
-        background-color: green;
-        color: white;
-        height: 50px;
-        width: 170px;
-        font-size: 35px;
-    
-        margin-left: 250px;
-
-
-}
-
-::placeholder{
-    color:white;  
-    
-}
-.disponivel{
-    display: flex;
-    margin-top: 30px;
-    margin-left: 30px;
-   
-   
-}
-#mensagemV{
-  
-    background-color: white ;
-    resize: none;
-    height: 250px;
-     width: 510px;
-     padding-top: 25px;
-     font-size: 25px;
-     color: black;
-     text-align: center;
-     border: none;
-
-}
-.preço{
-    padding-top:10px ;
-    
-}
-
-.AreaProdutos{
-    height: 20vh;
-    width: 100%;
-   
-    margin-top: 50px;
     justify-content: space-around;
-    display: flex;
-    align-items: center;
 }
-.Quadro{
-    height: 150px;
-    width: 150px;
-    background-color: brown;
-    background-image: url(../../assets/images/placamae.webp);
-    background-size: cover;
+
+.boxFoto {
+    background-image: url('./../../assets/images/placaMae.webp');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100%;
+    width: 55%;
+    height: 100%;
+
+}
+.descricaoArea
+{
+    width: 100%;
+    display: flex;
+}
+
+.boxTextoVenda {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    margin-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+
+.comprarArea
+{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(250, 234, 10);
 }

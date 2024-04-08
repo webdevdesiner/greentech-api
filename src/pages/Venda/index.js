@@ -1,78 +1,75 @@
-import "./style.css";
-import { FaHeart, FaRegHeart } from "react-icons/fa"
+import Footer from '../../components/Footer';
+import Nav from '../../components/Nav';
+import './style.css';
+import Menu from './../../components/Menu'
+import { FaShoppingCart } from 'react-icons/fa';
 
-
-import React from 'react';
-import MinhaImagem from './../../assets/images/greentech.png'
-import Footer from "../../components/Footer";
-
-
+import React from 'react'
 
 const Venda = () => {
-  return (
+    return (
+        <div className='homeArea'>
 
-    <div className="HomeArea">
-      <div className="blacked">
-        <div className="imagem">
-          <img src={MinhaImagem}></img>
+
+
+            <div className='home'>
+                <div className='blacked'>
+                    <Nav />
+                    <Menu />
+                    <div className='imgArea'></div>
+
+                    <div className='vendaArea'>
+                        <div className='boxFoto'>
+                            <div className='fotoVenda'></div>
+                        </div>
+                        <div className='descricaoArea'>
+                            <div className='boxTextoVenda'>
+                                <ul>
+                                    <h5>Descrição</h5>
+                                    <p>
+                                        Descrição
+                                        Características:
+                                        - Marca: Asus
+                                        - Modelo: 90MB19N0-C1BAY0
+                                        Especificações:
+                                        CPU:
+                                        - Soquete Intel® LGA1700 para Processadores* 12a Gen Intel® Core™, Pentium® Gold e Celeron®
+                                        - Suporta Intel® Turbo Boost Technology 2.0 e Intel® Turbo Boost Max Technology 3.0**
+                                        * Verifique www.asus.com para lista de suporte de CPU.
+                                        ** O suporte a Intel® Turbo Boost Max Technology 3.0 depende do tipo de CPU.
+                                        Chipset:
+                                        - Chipset Intel® H610
+                                        Memória:
+                                        - 2 x Memória* DIMM, Max. 64GB, DDR4 3200/3000/2933/2800/2666/2400/2133 Non-ECC, Un-buffered
+                                        - Dual Channel Memory Architecture
+                                        - Suporta Intel® Extreme Memory Profile (XMP)
+                                        * A taxa de dados de memória real depende dos tipos de CPU e módulos DRAM, para mais informações, consulte o site do fabricante (Asus com) para obter a QVL (Listas de fornecedores qualificados) de Memória .
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className='comprarArea'>
+                        <div className='preço'><h1>R$ 99,99</h1></div>
+                        <div className='botaoComprar'>
+                        <button type="button">COMPRAR </button>
+                        </div>
+                        <div className='botaoCarrinho'>
+                            <button type='button'><FaShoppingCart className='iconeMedio'/></button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <Footer />
+            </div>
         </div>
 
-        <div className="telaArea">
-          <div className="div1">
-          
 
-
-            <label for='nome'></label>
-            <input disabled type="text" id="titulo" name="titulo" className="for" placeholder="Tela de Computador"></input>
-
-            <div className="Titulotela">
-              <div id="coracao">
-              <FaRegHeart/>
-
-              </div>
-
-            </div>
-            <div className="preço">
-              <label for="preco"></label>
-              <button disabled  id="preco" name="preco" rows={50} cols={50} placeholder="R$ Preço">R$ Preço</button>
-              <button id="comprar">Comprar</button>
-            </div>
-
-          </div>
-
-
-          <div className="div2">
-
-            <div>
-
-                <label for="mensagem">Descriçao do produto</label>
-            </div>
-                <textarea disabled id="mensagemV" name="mensagem" rows={50} cols={50} placeholder="Tem duvidas?"></textarea>
-             
-            </div>
-          </div>
-
-          <div className="AreaProdutos">
-            <div className="Quadro"></div>
-            <div className="Quadro"></div>
-            <div className="Quadro"></div>
-            <div className="Quadro"></div>
-
-          </div>
-        </div>
-
-        <div>
-
-        </div>
-
-        <Footer/>
-
-      </div>
-       
-
-
-
-  )
+    )
 }
+
 
 export default Venda

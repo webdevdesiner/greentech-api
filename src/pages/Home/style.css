@@ -1,0 +1,111 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.homeArea
+{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(228, 228, 228);
+    width: 100vw;
+    height: 100vh;
+}
+.home
+{
+
+    background-image: url(./../../assets/images/4x/Ativo\ 1@4x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    
+
+}
+
+.blacked
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+
+
+
+
+.imgArea2
+{
+    background-image: url(./../../assets/images/greentech.png);
+    width: 100%;
+    height: 40vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    
+   
+   
+}
+
+.welcome
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.boxTexto
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.texto
+{
+    width: 700px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    margin-bottom: -40px;
+}
+
+button
+{
+    width: 200px;
+    height: 50px;
+    font-size: x-large;
+    align-items: center;
+}
+
+.botao
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.botaoArea
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+

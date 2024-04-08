@@ -10,15 +10,9 @@ import Login from './pages/Login';
 import Sobre from './pages/Sobre';
 import FaleConosco from './pages/FaleConosco';
 import Venda from './pages/Venda';
-import Cadastro from './pages/Cadastro';
 import Listagem from './pages/Listagem';
 import Cadprodutos from './pages/Cadprodutos';
-
-
-import CadastroProdutos from './pages/CadastroProdutos';
-import PerfilUsuario from './pages/PerfilUsuario';
-import Cadastro from './pages/Cadastro';
-import Chat from './pages/Chat'
+import Contato from './pages/Contato';
 
 function App() {
   return (

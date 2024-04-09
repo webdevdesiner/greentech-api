@@ -115,9 +115,26 @@ const initialCadProdutos = {
     descricao:''
 }
  
-const UserContext = createContext(undefined);
+const GlobalContext = createContext(undefined);
 
-const CadProvider = ({ children }) => {
+ 
+const GlobalProvider = ({ children }) => {
+    const [users, setUsers] = useState(userInitial);
+ 
+    const addUser = (user) => {
+        setPosts([...users, user]);
+    }
+ 
+    const removeUser = (id) => {
+        const index = users.findIndex(user => user?.id === id);
+        if (index !== -1) {
+            setUsers([
+                ...users.slice(0, index),
+                ...users.slice(index+1, users   .length)
+            ])
+        }
+    }
+
     const [produtos, setProdutoss] = useState(initialCadProdutos);
  
     const addProdutos = (produto) => {
@@ -134,33 +151,13 @@ const CadProvider = ({ children }) => {
         }
     }
  
-  
-}
- 
-const UserProvider = ({ children }) => {
-    const [users, setUsers] = useState(userInitial);
- 
-    const addUser = (user) => {
-        setPosts([...users, user]);
-    }
- 
-    const removeUser = (id) => {
-        const index = users.findIndex(user => user?.id === id);
-        if (index !== -1) {
-            setUsers([
-                ...users.slice(0, index),
-                ...users.slice(index+1, users   .length)
-            ])
-        }
-    }
- 
-    return <UserContext.Provider value={{users, addUser, removeUser,produtos,addProdutos,removeProdutos}}>
+    return <GlobalContext.Provider value={{users, addUser, removeUser,produtos,addProdutos,removeProdutos}}>
         {children}
-    </UserContext.Provider>;
+    </GlobalContext.Provider>;
 }
 
  
-const userPostContext = () => {
+const useGlobalContext = () => {
     const context = useContext(UserContext);
     if(!context) {
         throw new Error('usePostContext deve ser usado dentro de um PostProvider')
@@ -172,6 +169,6 @@ export {
     initialUser,
     cadProdutoInitial,
     initialCadProdutos,
-    UserProvider,
-    userPostContext
+    GlobalProvider,
+    useGlobalContext
 }

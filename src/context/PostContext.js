@@ -122,7 +122,7 @@ const GlobalProvider = ({ children }) => {
     const [users, setUsers] = useState(userInitial);
  
     const addUser = (user) => {
-        setPosts([...users, user]);
+        setUsers([...users, user]);
     }
  
     const removeUser = (id) => {
@@ -158,7 +158,7 @@ const GlobalProvider = ({ children }) => {
 
  
 const useGlobalContext = () => {
-    const context = useContext(UserContext);
+    const context = useContext(useContext);
     if(!context) {
         throw new Error('usePostContext deve ser usado dentro de um PostProvider')
     }

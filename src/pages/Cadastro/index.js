@@ -3,7 +3,7 @@ import Nav from '../../components/Nav';
 import Footer from '../../components/Footer';
 import Menu from '../../components/Menu';
 import './style.css'
-
+ 
 const Cadastro = () => {
     return (
         <div className='homeArea'>
@@ -12,37 +12,37 @@ const Cadastro = () => {
                     <Nav />
                     <Menu />
                     <div className='imgArea'></div>
-
-
-
+ 
+ 
+ 
                     <form className='cadastroArea'>
                         <h1>CADASTRO USUÁRIO</h1> <br/><br/><br/>
-
+ 
                         <div className='blocoLine'>
                             <div className='formArea'>
                                 <div className='bloco'>
-                                    
+                                   
                                         <div className='campo'>
                                             <label>Email</label>
                                             <input type='email'></input>
                                         </div>
-                                    
+                                   
                                 </div>
                                 <div className='bloco'>
-                                    
+                                   
                                         <div className='campo'>
                                             <label>Senha</label>
                                             <input type='password'></input>
                                         </div>
-                                    
+                                   
                                 </div>
                                 <div className='bloco'>
-                                    
+                                   
                                         <div className='campo'>
                                             <label>Confirme sua senha</label>
                                             <input type='password'></input>
                                         </div>
-                                    
+                                   
                                 </div>
                             </div>
                             <div className='formArea'>
@@ -70,7 +70,7 @@ const Cadastro = () => {
                                         </div>
                                     </div>
                                 </div>
-
+ 
                             </div>
                             <div className='formArea'>
                                 <div className='bloco'>
@@ -104,14 +104,14 @@ const Cadastro = () => {
                                         </div>
                                     </div>
                                 </div>
-
-
+ 
+ 
                             </div>
-
-
+ 
+ 
                         </div>
-
-                        
+ 
+                       
                         <div className='formArea'>
                             <div className='bloco'>
                                 <div className='linha'>
@@ -164,7 +164,7 @@ const Cadastro = () => {
                                 </div>
                             </div>
                         </div>
-                            <div className='botaoCadatsroEnviarAlinhamento'> 
+                            <div className='botaoCadatsroEnviarAlinhamento'>
                         <div><button className='botaoCadastroEnviar'><a href='./Login'>ENVIAR</a></button></div>
                         </div>
                     </form>
@@ -174,5 +174,5 @@ const Cadastro = () => {
         </div>
     )
 }
-
+ 
 export default Cadastro

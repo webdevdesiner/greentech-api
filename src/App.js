@@ -1,18 +1,15 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import CadastroProdutos from './pages/CadastroProdutos';
-import PerfilUsuario from './pages/PerfilUsuario';
 import Cadastro from './pages/Cadastro';
-import Chat from './pages/Chat'
-import MeusAnuncios from './pages/MeusAnuncios';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Sobre from './pages/Sobre';
 import FaleConosco from './pages/FaleConosco';
-import Venda from './pages/Venda';
 import Listagem from './pages/Listagem';
 import Cadprodutos from './pages/Cadprodutos';
 import Contato from './pages/Contato';
+import Venda from './pages/Venda';
+
 
 function App() {
   return (
@@ -26,19 +23,8 @@ function App() {
           <Contato/>
         }>
       </Route>
-      <Route path='/Venda' element ={
-          <Venda/>
-        }>
-      </Route>
-      <Route path='/MeusAnuncios' element ={
-          <MeusAnuncios/>
-        }></Route>
-      <Route path='cadprod' element ={
-        <CadastroProdutos/>
-      }>
-
-      </Route>
-
+     
+      
       <Route path='/login' element ={
         <Login/>
       }>
@@ -63,6 +49,7 @@ function App() {
 
       </Route>
 
+
       <Route path='/cadastro' element ={
         <Cadastro/>
       }>
@@ -81,17 +68,10 @@ function App() {
 
       </Route>
 
-      <Route path='perfusu' element ={
-        <PerfilUsuario/>
-      }></Route>
-
 <Route path='cad' element ={
         <Cadastro/>
       }></Route>
 
-<Route path='chat' element ={
-        <Chat/>
-      }></Route>
     </Routes>
     
 

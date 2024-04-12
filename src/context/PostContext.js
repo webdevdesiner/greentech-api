@@ -158,7 +158,7 @@ const GlobalProvider = ({ children }) => {
 
  
 const useGlobalContext = () => {
-    const context = useContext(useContext);
+    const context = useContext(GlobalContext);
     if(!context) {
         throw new Error('usePostContext deve ser usado dentro de um PostProvider')
     }

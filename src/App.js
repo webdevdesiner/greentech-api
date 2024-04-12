@@ -9,11 +9,19 @@ import Listagem from './pages/Listagem';
 import Cadprodutos from './pages/Cadprodutos';
 import Contato from './pages/Contato';
 import Venda from './pages/Venda';
+import { useGlobalContext } from './context/PostContext';
+
+
 
 
 function App() {
+
+  const { Users } = useGlobalContext ();
+
   return (
-    
+ 
+  
+        
     <Routes>
       <Route path='/' element ={
           <Home/>

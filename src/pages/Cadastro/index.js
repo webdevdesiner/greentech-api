@@ -4,14 +4,13 @@ import Footer from '../../components/Footer';
 import Menu from '../../components/Menu';
 import './style.css'
 import {Formik, Form, Field} from 'formik';
-import {initialUser, useGlobalContext} from '../../context/PostContext';
+import {initialUser, useGlobalContext} from '../../context/GlobalContext';
 
 
 
-const Cadastro = () => {
+const CadastroUsuario = () => {
 
-    const { users, addUser } = useGlobalContext();
-    console.log(users)
+    const { addUsuario } = useGlobalContext();
     return (
         <div className='homeArea'>
             <div className='home'>
@@ -25,29 +24,24 @@ const Cadastro = () => {
                         initialValues={initialUser}
                         onSubmit={(values, actions) => {
                             const newUser = {
-                                id: users[users.length - 1]?.id ? users[users.length - 1]?.id + 1 : 1,
-                                nome: values.nome,
-                                cpf: values.cpf,
                                 email: values.email,
-                                senha: values.senha,
-                                nascimento: values.nascimento,
-                                genero: values.genero,
-                                rg: values.rg,
-                                perfilUsuario: values.perfilUsuario,
+                                senha: values.senha, 
+                                nome: values.nome,
                                 endereco: values.endereco,
-                                numero: values.numero,
-                                complemento: values.complemento      
+                                bairro: values.bairro, 
+                                cidade: values.cidade,
+                                uf: values.uf,
+                                cep: values.cep,
                                 }
                              
-                            addUser(newUser);
-                            actions.setValues(
-                                initialUser
-                            )
+                                addUsuario(newUser);
 
-                          
+                                actions.setValues(
+                                    initialUser
+                                  )
                         }}
                         >
-                        <Form className='cadastroArea'>
+                        <Form className='cadastroArea' method='post'  >
 
 
 
@@ -56,10 +50,11 @@ const Cadastro = () => {
                             <div className='blocoLine'>
                                 <div className='formArea'>
                                     <div className='bloco'>
-
+                            
                                         <div className='campo'>
                                             <label>Email</label>
-                                            <Field type='email' name="email" />
+                                            <Field 
+                                            id="email" type='email' name="email" placeholder="digite seu email"/>
                                         </div>
 
                                     </div>
@@ -67,7 +62,7 @@ const Cadastro = () => {
 
                                         <div className='campo'>
                                             <label>Senha</label>
-                                            <Field type='password' name="senha"/>
+                                            <Field id="senha" placeholder="digite sua senha" type='password' name="senha"/>
                                         </div>
 
                                     </div>
@@ -84,101 +79,30 @@ const Cadastro = () => {
                                     <div className='bloco'>
                                         <div className='linha'>
                                             <div className='campo'>
-                                                <label>Nome Completo</label>
-                                                <Field type='text' name="nome" />
+                                                <label>Nome</label>
+                                                <Field id="nome" type='text' name="nome" />
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className='bloco'>
-                                        <div className='linha'>
-                                            <div className='campo'>
-                                                <label>CPF</label>
-                                                <Field type='text' name="cpf"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className='bloco'>
-                                        <div className='linha'>
-                                            <div className='campo'>
-                                                <label>Data de nascimento</label>
-                                                <Field type='date' name="nascimento"/>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div className='formArea'>
-                                    <div className='bloco'>
-                                        <div className='linha'>
-                                            <div className='campo'>
-                                                <label for="genero">Gênero:</label>
-                                                <select id="genero" name="genero">
-                                                    <option value="masculino">Masculino</option>
-                                                    <option value="feminino">Feminino</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className='bloco'>
-                                        <div className='linha'>
-                                            <div className='campo'>
-                                                <label>RG</label>
-                                                <Field type='number' name="rg"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className='bloco'>
-                                        <div className='linha'>
-                                            <div className='campo'>
-                                                <label for="genero">Perfil Usuário:</label>
-                                                <select id="genero" name="genero">
-                                                    <option value="comprador">Comprador</option>
-                                                    <option value="vendedor">Vendedor</option>
-                                                    <option value="compradorVendedor">Comprador/Vendedor</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-
-                            </div>
-
-
+                                    </div>  
+                                </div>  
                             <div className='formArea'>
                                 <div className='bloco'>
                                     <div className='linha'>
                                         <div className='campo'>
                                             <label>Endereço</label>
-                                            <Field type='text' name = "endereco"/>
+                                            <Field id="endereco" type='text' name="endereco"/>
                                         </div>
                                     </div>
                                 </div>
-                                <div className='bloco'>
-                                    <div className='linha'>
-                                        <div className='campo'>
-                                            <label>Numero</label>
-                                            <Field type='number' name="numero"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='bloco'>
-                                    <div className='linha'>
-                                        <div className='campo'>
-                                            <label>Complemento</label>
-                                            <Field type='text' name = "complemento"/>
-                                        </div>
-                                    </div>
-                                </div>
+                               
+                                
                             </div>
                             <div className='formArea'>
                                 <div className='bloco'>
                                     <div className='linha'>
                                         <div className='campo'>
                                             <label>Bairro</label>
-                                            <Field type='text' name = "bairro"/>
+                                            <Field id="bairro" type='text' name="bairro"/>
                                         </div>
                                     </div>
                                 </div>
@@ -186,18 +110,29 @@ const Cadastro = () => {
                                     <div className='linha'>
                                         <div className='campo'>
                                             <label>Cidade</label>
-                                            <Field type='text'name = "cidade"/>
+                                            <Field id="cidade" type='text'name="cidade"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='bloco'>
                                     <div className='linha'>
                                         <div className='campo'>
-                                            <label>Estado</label>
-                                            <Field type='text' name = "estado"/>
+                                            <label>UF</label>
+                                            <Field id="uf" type='text' name="uf"/>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div className='bloco'>
+                                    <div className='linha'>
+                                        <div className='campo'>
+                                            <label>CEP</label>
+                                            <Field type='text' name="cep"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                             </div>
                             <div className='botaoCadatsroEnviarAlinhamento'>
                                 <button type='submit' className='botaoCadastroEnviar'>ENVIAR</button>
@@ -213,4 +148,4 @@ const Cadastro = () => {
     )
 }
 
-export default Cadastro
+export default CadastroUsuario

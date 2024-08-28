@@ -9,7 +9,7 @@ import Listagem from './pages/Listagem';
 import Cadprodutos from './pages/Cadprodutos';
 import Contato from './pages/Contato';
 import Venda from './pages/Venda';
-import { useGlobalContext } from './context/PostContext';
+import { useGlobalContext } from './context/GlobalContext';
 
 
 

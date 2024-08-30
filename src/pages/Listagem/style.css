@@ -13,6 +13,7 @@
     /* background-color: rgb(184, 184, 184); */
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 

@@ -4,9 +4,47 @@ import './style.css';
 import Menu from './../../components/Menu'
 
 
-import React from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+import { useGlobalContext } from '../../context/GlobalContext';
+import api from '../../services/api';
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [dados, setDados] = useState({
+    email: '',
+    senha: ''
+  })
+  const {logado, setLogado} = useGlobalContext()
+  const [erroLogin, setErroLogin] = useState(
+    false
+   
+  )
+
+  const handleChange = (e) => {
+    setDados({...dados, [e.target.name]: e.target.value})
+  }
+
+  console.log(logado)
+  
+  const handleCadastrar = (e) => {
+    e.preventDefault();
+    api.post('/login', dados).then(data => 
+    {
+      console.log(data)
+      if(!data) {
+        setErroLogin(true)
+        setLogado(false)
+        return
+      } 
+      setErroLogin(false)
+      setLogado(true)
+      navigate('/cadprodutos')
+      return
+      
+    }
+    )
+  }
   return (
     <div className='homeArea'>
     
@@ -19,14 +57,14 @@ const Login = () => {
           <div className='welcome'><h1>LOGIN</h1></div>
           <div className='loginArea'>
             <label>Usuário</label>
-            <input type='text'></input>
+            <input onChange={handleChange} type='text' name='email' value={dados.email} required></input>
 
             <label>Senha</label>
-            <input type='password'></input>
+            <input onChange={handleChange} type='password' name='senha' value={dados.senha} required></input>
           </div>
           
-          <div className='botao'><button><a href='./Listagem'><strong>ENTRAR</strong></a></button>  </div>
-          <div className='botao'><button><strong>< a href='./../Cadastro'>CADASTRAR</a></strong></button>  </div>
+          <div className='botao'><button onClick={handleCadastrar}>ENTRAR</button>  </div>
+          <div className='botao'><button><strong>< a href='/cadastro'>CADASTRAR</a></strong></button>  </div>
           
         </div>
         

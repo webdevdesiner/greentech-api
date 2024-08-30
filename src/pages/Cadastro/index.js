@@ -33,7 +33,7 @@ const CadastroUsuario = () => {
                                 uf: values.uf,
                                 cep: values.cep,
                                 }
-                             
+                                console.log(newUser)
                                 addUsuario(newUser);
 
                                 actions.setValues(
@@ -54,7 +54,7 @@ const CadastroUsuario = () => {
                                         <div className='campo'>
                                             <label>Email</label>
                                             <Field 
-                                            id="email" type='email' name="email" placeholder="digite seu email"/>
+                                            id="email" type='text' name="email" placeholder="digite seu email" />
                                         </div>
 
                                     </div>

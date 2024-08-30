@@ -5,8 +5,19 @@ import Menu from './../../components/Menu'
 import { FaShoppingCart } from 'react-icons/fa';
 
 import React from 'react'
+import { useQuery } from 'react-query';
+import { useParams } from 'react-router-dom'
+import { getAnuncio } from '../../requests/show';
 
 const Venda = () => {
+    const { id } = useParams();
+  const { data: anuncio, isLoading} = useQuery(['getAnuncio', {id}], getAnuncio, {
+    enabled: !!id
+  })
+   if(isLoading) {
+    return <div>carregando...</div>
+   }
+   console.log(anuncio)
     return (
         <div className='homeArea'>
 
@@ -27,31 +38,17 @@ const Venda = () => {
                                 <ul>
                                     <h5>Descrição</h5>
                                     <p>
-                                        Descrição
-                                        Características:
-                                        - Marca: Asus
-                                        - Modelo: 90MB19N0-C1BAY0
-                                        Especificações:
-                                        CPU:
-                                        - Soquete Intel® LGA1700 para Processadores* 12a Gen Intel® Core™, Pentium® Gold e Celeron®
-                                        - Suporta Intel® Turbo Boost Technology 2.0 e Intel® Turbo Boost Max Technology 3.0**
-                                        * Verifique www.asus.com para lista de suporte de CPU.
-                                        ** O suporte a Intel® Turbo Boost Max Technology 3.0 depende do tipo de CPU.
-                                        Chipset:
-                                        - Chipset Intel® H610
-                                        Memória:
-                                        - 2 x Memória* DIMM, Max. 64GB, DDR4 3200/3000/2933/2800/2666/2400/2133 Non-ECC, Un-buffered
-                                        - Dual Channel Memory Architecture
-                                        - Suporta Intel® Extreme Memory Profile (XMP)
-                                        * A taxa de dados de memória real depende dos tipos de CPU e módulos DRAM, para mais informações, consulte o site do fabricante (Asus com) para obter a QVL (Listas de fornecedores qualificados) de Memória .
+                                        {anuncio?.DESCRICAO}
                                     </p>
+
+                                    
                                 </ul>
                             </div>
                         </div>
 
                     </div>
                     <div className='comprarArea'>
-                        <div className='preço'><h1>R$ 99,99</h1></div>
+                        <div className='preço'><p>preço</p></div>
                         <div className='botaoComprar'>
                         <button type="button">COMPRAR </button>
                         </div>

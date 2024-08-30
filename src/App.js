@@ -10,6 +10,7 @@ import Cadprodutos from './pages/Cadprodutos';
 import Contato from './pages/Contato';
 import Venda from './pages/Venda';
 import { useGlobalContext } from './context/GlobalContext';
+import ClientPrivateRoute from './components/Auth/ClientPrivateRoute';
 
 
 
@@ -51,7 +52,7 @@ function App() {
 
       </Route>
 
-      <Route path='/venda' element ={
+      <Route path='/anuncios/:id' element ={
         <Venda/>
       }>
 
@@ -71,7 +72,10 @@ function App() {
       </Route>
 
       <Route path='/cadprodutos' element ={
-        <Cadprodutos/>
+        <ClientPrivateRoute>
+          <Cadprodutos/>
+        </ClientPrivateRoute>
+        
       }>
 
       </Route>
